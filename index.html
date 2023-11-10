@@ -6,23 +6,29 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/link.css' rel='stylesheet'>
   <title>URLs Shortener</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <span>ICON</span>
-      <h2>URL Shortener</h2>
+  <div class="app">
+    <div class="wrapper">
+      <div class="header">
+        <span><i class="gg-link"></i></span>
+        <h2>URL Shortener</h2>
+      </div>
+      <p>Enter a URL to shorten : </p>
+      <div class="controls-wrapper">
+        <input type="url" placeholder="https://example.com">
+        <br>
+        <div class="button-controls">
+          <button class="control-buttons reload">Reload</button>
+          <button class="control-buttons Short it">Short it</button>
+        </div>
+        <p>Shortened URL</p>
+        <input type="url" class="shortened-url">
+      </div>
     </div>
-    <p>Enter a URL to shorten : </p>
-    <div class="controls-wrapper">
-      <input type="url" placeholder="https://example.com">
-      <button class="control-buttons reload">Reload</button>
-      <button class="control-buttons Short it">Short it</button>
-    </div>
-    <p>Shortened URL</p>
-    <input type="url">
   </div>
   <script type="module" src="/main.js"></script>
 </body>
