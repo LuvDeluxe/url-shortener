@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/link.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js" defer></script>
   <title>URLs Shortener</title>
 </head>
 
@@ -19,18 +21,17 @@
       </div>
       <p>Enter a URL to shorten : </p>
       <div class="controls-wrapper">
-        <input type="url" placeholder="https://example.com">
+        <input type="url" placeholder="https://example.com" class="original">
         <br>
         <div class="button-controls">
-          <button class="control-buttons reload">Reload</button>
-          <button class="control-buttons Short it">Short it</button>
+          <button class="control-buttons clear">Reload</button>
+          <button class="control-buttons shortit">Short it</button>
         </div>
         <p>Shortened URL</p>
-        <input type="url" class="shortened-url">
+        <input type="url" class="shortened-url-button">
       </div>
     </div>
   </div>
-  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
